@@ -1,0 +1,43 @@
+3.1 - Understand the Industry
+Explain the money flow and the information flow in the acquirer market and the role of the main players.
+
+ANSWER:
+- In this market, the money flow refers to the movement of funds as a result of financial transactions. For instance, when a custumer buy something with a credit card, the responsability of the acquirer market is to facilitate the transfer of funds from the customer's credit card to the merchant's bank account.
+Also in this market, the information flow is the exchange of information about the transaction and the entities involved int the transaction within those involved.
+- Acquirers are financial institutions that process payments on behalf of their clients, I believe the merchants.
+- Issuers are the financial companies that issue credit and debit cards.
+- Merchants are the companies (stores, business) that receive payments from their customers.
+----------------------------------------------------------------------------------------------------------------------------------------------
+Explain the difference between acquirer, sub-acquirer and payment gateway and how the flow explained in question 1 changes for these players.
+
+ANSWER:
+- The acquirer is a financial institution that processes payments for the merchants, when a customer buy something with a credit card, the acquirer is responsible for the transfer from the customer's account to the merchant's bank account. For instance: Cielo, Stone, Getnet
+- The sub-acquirer is also a financial institution, but smaller with less expertise to process payments directly. They usually rely on the services of an acquirer to provide these services. For instance: Paypal, Pagseguro.
+- A payment gateway is a system responsible for processing payments from a merchant's website and the payment network. It is responsible for securing the information, such as amount and payment details. Some companies that receive those information as example: Braspag and Mundipagg.
+- I believe the main difference between these players is the involvelment they have in the payment processing process.
+- Acquirer have their main role to process payments, while sub-acquirers and payment gateways are more supporting roles.
+----------------------------------------------------------------------------------------------------------------------------------------------
+Explain what chargebacks are, how they differ from cancellations and what is their connection with fraud in the acquiring world.
+
+ANSWER:
+- Chargeback is a reversal of a credit card transaction issued by the cardholder, cancellations are issued by the merchant.
+- Cancellation usually happens when the transaction is not yet completed, chargebacks are used when a transaction has already been completed.
+- Chargebacks are usually linked to disputes in fraudulent transactions. If a customer believes its transaction was unauthorized they can rely on chargeback to have the transaction reversed.
+----------------------------------------------------------------------------------------------------------------------------------------------
+3.2 - Get your hands dirty
+Using this csv with hypothetical transactional data, imagine that you are trying to understand if there is any kind of suspicious behavior.
+
+
+Analyze the data provided and present your conclusions (consider that all transactions are made using a mobile device).
+ANSWER:
+- I believe it is a fraud prevention file containing the transaction_id, as well as the merchant_id which would be the ID of the establishment where the transaction took place, the user_id which is the ID of the user himself who made the transaction, the credit card number,
+the date of the transaction, the value, the device_id is which device made that transaction and whether there is a chargeback or not, the latter being an indication of fraud.
+- Transactions that have chargeback true are transactions that have been disputed, I believe it is an indication of fraud. I also noticed that some transactions have a blank device_id, I believe it was a transaction with a physical card, in a store and not online or that the device is unknown.
+- Some behaviors that I assume are suspicious: transactions with very high values in a short period of time, as well as transactions at unusual times (based on the user_id history).
+Transactions with many different devices, I imagine that two, three that are repeated are a good pattern. But if there is a device that does not usually repeat, I believe it is suspicious.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+In addition to the spreadsheet data, what other data would you look at to try to find patterns of possible frauds?
+ANSWER:
+I believe that looking at the IP of transactions and the time between transactions is a good way to understand it seems like a suspicious behavior.
+I believe that since it is something we use very often in our daily lives, there are countless patterns that can be followed. By looking outside the standard, we may find suspicious behaviors that may be fraud.
