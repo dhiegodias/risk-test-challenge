@@ -17,6 +17,7 @@ Attached you can find the PostgresSQL docker-compose to run the database in a co
 `rails db:migrate` to create the tables
 
 * API
+The route is: `/transactions`
 The API expect a payload such as:
 ```
 {
